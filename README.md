@@ -9,7 +9,7 @@ https://arxiv.org/abs/2505.15661
 
 # Neural network unrolling of greedy weighted sparse recovery algorithms
 Code used to generate the figures of the article: 
-main paper: [*Deep greedy unfolding: Sorting out argsorting in greedy sparse recovery algorithms*]([https://arxiv.org/abs/2303.00844])
+main paper: [*Deep greedy unfolding: Sorting out argsorting in greedy sparse recovery algorithms*][https://arxiv.org/abs/2303.00844]
 [*OMP-Net: Neural network unrolling of weighted orthogonal mathcing pursuit*]([[https://arxiv.org/abs/2303.00844]]) by *Sina Mohammad-Taheri and Simone Brugiapaglia*.
 
 # Article's abstract
