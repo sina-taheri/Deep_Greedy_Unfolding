@@ -9,8 +9,8 @@ https://arxiv.org/abs/2505.15661
 
 # Neural network unrolling of greedy weighted sparse recovery algorithms
 Code used to generate the figures of the article: 
-main paper: [*Deep greedy unfolding: Sorting out argsorting in greedy sparse recovery algorithms*]([https://arxiv.org/abs/2303.00844])
-[*OMP-Net: Neural network unrolling of weighted orthogonal mathcing pursuit*]([[https://arxiv.org/abs/2303.00844]]) by *Sina Mohammad-Taheri and Simone Brugiapaglia*.
+main paper: [*Deep greedy unfolding: Sorting out argsorting in greedy sparse recovery algorithms*](https://arxiv.org/abs/2303.00844)
+[*OMP-Net: Neural network unrolling of weighted orthogonal mathcing pursuit*](https://arxiv.org/abs/2303.00844) by *Sina Mohammad-Taheri and Simone Brugiapaglia*.
 
 # Article's abstract
 We propose a class of greedy algorithms for weighted sparse recovery by considering new loss function-based generalizations of Orthogonal Matching Pursuit (OMP). Given a (regularized) loss function, the proposed algorithms alternate the iterative construction of the signal support via greedy index selection and a signal update based on solving a local data-fitting problem restricted to the current support. We show that greedy selection rules associated with popular weighted sparsity-promoting loss functions admit explicitly computable and simple formulas. Specifically, we consider l0- and l1-based versions of the weighted LASSO (Least Absolute Shrinkage and Selection Operator), the Square-Root LASSO (SR-LASSO) and the Least Absolute Deviations LASSO (LAD-LASSO). Through numerical experiments on Gaussian compressive sensing and high-dimensional function approximation, we demonstrate the effectiveness of the proposed algorithms and empirically show that they inherit desirable characteristics from the corresponding loss functions, such as SR-LASSO's noise-blind optimal parameter tuning and LAD-LASSO's fault tolerance. In doing so, our study sheds new light on the connection between greedy sparse recovery and convex relaxation.
