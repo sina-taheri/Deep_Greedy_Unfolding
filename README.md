@@ -22,7 +22,7 @@ The scripts depends on the following python packages:
 # How to use this code
 ## Code organization
 <pre>
-script directory/
+```text script directory/
 |
 ├── main_fig_1.py
 ├── models/
@@ -55,7 +55,7 @@ script directory/
 │           └── checkpoints/
 │   └── figs/
 │       ├── fig_2/
-│       └── fig_3/
+│       └── fig_3/```
 </pre>
 
 ### models
