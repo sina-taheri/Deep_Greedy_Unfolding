@@ -24,7 +24,7 @@ The scripts depends on the following python packages:
 <pre>
 script directory/
 |
-├── main_fig_1.py  <span style="font-weight:bold; color:green;">README.md</span># to generate figure 1: Sort vs. Soft-sort
+├── main_fig_1.py  <span style="font-weight:bold; color:green;">README.md</span> # to generate figure 1: Sort vs. Soft-sort
 ├── models/
 │   ├── algs_module.py
 │   └── nnet_module.py
