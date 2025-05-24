@@ -24,10 +24,10 @@ The scripts depends on the following python packages:
 <pre>
 script directory/
 |
-├── main_fig_1.py
+├── main_fig_1.py  # to generate figure 1: Sort vs. Soft-sort
 ├── models/
 │   ├── algs_module.py
-│   ├── nnet_module.py
+│   └── nnet_module.py
 │
 ├── utils/
 │   ├── data_gen.py
