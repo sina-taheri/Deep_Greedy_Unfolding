@@ -21,7 +21,8 @@ The scripts depends on the following python packages:
 
 # How to use this code
 ## Code organization
-script directory/...
+<pre>
+script directory/
 |
 ├── main_fig_1.py
 ├── models/
@@ -55,7 +56,7 @@ script directory/...
 │   └── figs/
 │       ├── fig_2/
 │       └── fig_3/
-│
+</pre>
 
 ### models
 Contains the main Matlab files used to create figures.
