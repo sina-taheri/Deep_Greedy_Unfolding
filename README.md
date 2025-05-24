@@ -21,6 +21,42 @@ The scripts depends on the following python packages:
 
 # How to use this code
 ## Code organization
+script directory/
+|
+├── main_fig_1.py
+├── models/
+│   ├── algs_module.py
+│   ├── nnet_module.py
+│
+├── utils/
+│   ├── data_gen.py
+│   ├── my_config.py
+│   ├── sort_proxy.py
+│   └── train_module.py
+│
+├── OMP/
+│   ├── main_fig_2_OMP.py
+│   ├── main_fig_3_OMP.py
+│   ├── data/
+│       ├── fig_2/
+│       └── fig_3/
+│           └── checkpoints/
+│   └── figs/
+│       ├── fig_2/
+│       └── fig_3/
+│
+├── IHT/
+│   ├── main_fig_2_IHT.py
+│   ├── main_fig_3_IHT.py
+│   ├── data/
+│       ├── fig_2/
+│       └── fig_3/
+│           └── checkpoints/
+│   └── figs/
+│       ├── fig_2/
+│       └── fig_3/
+│
+
 ### models
 Contains the main Matlab files used to create figures.
 
