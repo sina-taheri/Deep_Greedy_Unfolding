@@ -58,8 +58,8 @@ script directory/
 
 ## Algorithms
 The package contains the following algorithms:
-* Orthogonal Matching Pursuit (OMP): G. M. Davis, S. G. Mallat, and Z. Zhang, Adaptive time-frequency decompositions, Optical Engineering, 33 (1994), pp. 2183–2191.
-* Iterative Hard Thresholding (IHT): T. Blumensath and M. E. Davies, Iterative thresholding for sparse approximations, Journal of Fourier analysis and Applications, 14 (2008), pp. 629–654.
+* **Orthogonal Matching Pursuit (OMP):** G. M. Davis, S. G. Mallat, and Z. Zhang, *Adaptive time-frequency decompositions*, Optical Engineering, 33 (1994), pp. 2183–2191.
+* **Iterative Hard Thresholding (IHT):** T. Blumensath and M. E. Davies, *Iterative thresholding for sparse approximations*, Journal of Fourier analysis and Applications, 14 (2008), pp. 629–654.
 
 ## How to use the code
 ### main_fig_2
