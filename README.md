@@ -1,26 +1,21 @@
-# Unrolling of greedy weighted sparse recovery algorithms
-**code TBA very soon - stay tuned!**
-
-Codes needed to regenerate the results in the paper:
-
-https://arxiv.org/abs/2505.15661
-
-
-
 # Neural network unrolling of greedy weighted sparse recovery algorithms
 Code used to generate the figures of the article: 
 * **main paper:** [*Deep greedy unfolding: Sorting out argsorting in greedy sparse recovery algorithms*](https://arxiv.org/abs/2303.00844) by *Sina Mohammad-Taheri, Matthew J. Colbrook, and Simone Brugiapaglia*.
 * [*OMP-Net: Neural network unrolling of weighted orthogonal mathcing pursuit*](https://arxiv.org/abs/2303.00844) by *Sina Mohammad-Taheri, Matthew J. Colbrook, and Simone Brugiapaglia*.
 
-# Article's abstract
+## Article's abstract
 Gradient-based learning imposes (deep) neural networks to be differentiable at all steps. This includes model-based architectures constructed by unrolling iterations of an iterative algorithm onto layers of a neural network, known as algorithm unrolling. However, greedy sparse recovery algorithms depend on the non-differentiable argsort operator, which hinders their integration into neural networks. In this paper, we address this challenge in Orthogonal Matching Pursuit (OMP) and Iterative Hard Thresholding (IHT), two popular representative algorithms in this class. We propose permutation-based variants of these algorithms and approximate permutation matrices using "soft" permutation matrices derived from softsort, a continuous relaxation of argsort. We demonstrate--both theoretically and numerically--that Soft-OMP and Soft-IHT, as differentiable counterparts of OMP and IHT and fully compatible with neural network training, effectively approximate these algorithms with a controllable degree of accuracy. This leads to the development of OMP- and IHT-Net, fully trainable network architectures based on Soft-OMP and Soft-IHT, respectively. Finally, by choosing weights as "structure-aware" trainable parameters, we connect our approach to structured sparse recovery and demonstrate its ability to extract latent sparsity patterns from data.
 
-# Python dependencies
+## Algorithms
+The package contains the following algorithms:
+* **Orthogonal Matching Pursuit (OMP):** G. M. Davis, S. G. Mallat, and Z. Zhang, *Adaptive time-frequency decompositions*, Optical Engineering, 33 (1994), pp. 2183–2191.
+* **Iterative Hard Thresholding (IHT):** T. Blumensath and M. E. Davies, *Iterative thresholding for sparse approximations*, Journal of Fourier analysis and Applications, 14 (2008), pp. 629–654.
+
+## How to use this code
+### Python dependencies
 The scripts depends on the following python packages:
 * Pytorch, Matplotlib, numpy, math, sys, os
-
-# How to use this code
-## Code organization
+### Code organization
 <pre>
 script directory/
 |
@@ -56,14 +51,8 @@ script directory/
 .
 </pre>
 
-## Algorithms
-The package contains the following algorithms:
-* **Orthogonal Matching Pursuit (OMP):** G. M. Davis, S. G. Mallat, and Z. Zhang, *Adaptive time-frequency decompositions*, Optical Engineering, 33 (1994), pp. 2183–2191.
-* **Iterative Hard Thresholding (IHT):** T. Blumensath and M. E. Davies, *Iterative thresholding for sparse approximations*, Journal of Fourier analysis and Applications, 14 (2008), pp. 629–654.
-
-## How to use the code
 ### main_fig_2
 ### main_fig_3
   
-# Disclaimer
+## Disclaimer
 This code is provided as a complementary resource for readers and without warranty of any kind. The code may not be suitable for all purposes and the user assumes all risks associated with its use.
