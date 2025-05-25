@@ -53,7 +53,10 @@ script directory/
 
 ### main_fig_2
 Experimental setup:
-0 for recovery error vs. $\tau$ and 1 for difference error vs. $\tau$.
+
+**0** for "recovery error vs. $\tau$`` and **1** for "difference error vs. $\tau$``.
+
+*main_fig2_data* generates the data and *main_fig3_plot* uses the data to plot the figure. If the data is already generated, comment out *main_fig2_data* from the main function.
 ### main_fig_3
   
 ## Disclaimer
