@@ -52,7 +52,8 @@ script directory/
 </pre>
 
 ### main_fig_2
-Experimental set: 0 for recovery error vs. $\tau$ and 1 for difference error vs. $\tau$.
+Experimental setup:
+0 for recovery error vs. $\tau$ and 1 for difference error vs. $\tau$.
 ### main_fig_3
   
 ## Disclaimer
