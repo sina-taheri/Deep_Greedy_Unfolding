@@ -24,38 +24,36 @@ The scripts depends on the following python packages:
 <pre>
 script directory/
 |
-├── main_fig_1.py  <span style="font-weight:bold; color:green;">README.md</span> # to generate figure 1: Sort vs. Soft-sort
-├── models/
-│   ├── algs_module.py
-│   └── nnet_module.py
+├── main_fig_1.py            # main code to generate figure 1: Sort vs. Soft-sort
+├── models/                  # including algorithms and models
+│   ├── algs_module.py       # including functions for algorithms in the package
+│   └── nnet_module.py       # including modules to build unrolled neural networks in the package
 │
 ├── utils/
-│   ├── data_gen.py
-│   ├── my_config.py
-│   ├── sort_proxy.py
-│   └── train_module.py
+│   ├── data_gen.py          # including data classes to generate the training and validation data for each unrolled network
+│   ├── my_config.py         # configs required in the training of networks, used in train_module
+│   ├── sort_proxy.py        # including soft-(arg)sorting functions to generate approximate permutation matrices 
+│   └── train_module.py      # including the trainer function for training networks
 │
-├── OMP/
-│   ├── main_fig_2_OMP.py
-│   ├── main_fig_3_OMP.py
-│   ├── data/
-│       ├── fig_2/
-│       └── fig_3/
-│           └── checkpoints/
-│   └── figs/
+├── OMP/                     # main folder for unrolling OMP algorithm
+│   ├── main_fig_2_OMP.py    # main code to generate figure 2: difference error vs. tau (recovery error vs. tau in the second paper)
+│   ├── main_fig_3_OMP.py    # main code to build and train neural networks generating figure 3: MSE-Loss, oracle weights, learned weights and relative ℓ2-error boxplots
+│   ├── data/                # data folder to store data of figures 2 and 3
+│       ├── fig_2/           # the folder contains data to generate figure 2
+│       └── fig_3/           # the folder contains the data to generate figure 3: dataset, checkpoints, best checkpoint dictionary
+│           └── checkpoints/ # contains checkpoints saved during the training procedure
+│   └── figs/                # the folder contains figures in the main paper
 │       ├── fig_2/
 │       └── fig_3/
 │
 ├── IHT/
 │   ├── main_fig_2_IHT.py
-│   ├── main_fig_3_IHT.py
-│   ├── data/
-│       ├── fig_2/
-│       └── fig_3/
-│           └── checkpoints/
-│   └── figs/
-│       ├── fig_2/
-│       └── fig_3/
+│   .
+│   .
+│   .
+.
+.
+.
 </pre>
 
 ### models
