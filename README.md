@@ -52,18 +52,18 @@ script directory/
 </pre>
 
 ### main_fig_2
-Experimental setup:  
+* Experimental setup:  
 Set to **0** for "recovery error vs. $\tau$" and to **1** for "difference error vs. $\tau$".
 
-*main_fig2_data* generates the data and *main_fig3_plot* uses the data to plot the figure. If the data is already generated, comment out *main_fig2_data* from the main function.
+* *main_fig2_data* generates the data and *main_fig3_plot* uses the data to plot the figure. If the data is already generated, comment out *main_fig2_data* from the main function.
 
 ### main_fig_3
-The code loads the dataset from fig_3 folder in the data folder (if you need to generate a new dataset uncomment the dataset line. e.g., *OMPLdata* - it overwrites the previously generated data). You can uncomment the code block in the "verify_dataloader" to check the data.  
-The nn model is built with e.g., *MLP_soft_OMP* from the "nnet_module.py".  
-A list of errors for the algorithm, its soft version and the network before training is printed.  
-The *main_train()* trains the neural network and during the training saves model parameters every few epochs to the checkpoint folder - comment out if the model is already trained and data exists.  
-The *best_checkpoint_finder()* finds the best checkpoint on the training data from the existing checkpoints and saves the data to the checkpoint folder - comment out if checkpoints are already saved.  
-The *main_fig_gen()* plots the figures using the model with parameters from the best checkpoint and saves figures to "fig_3" folder in the "figs".
+* The code loads the dataset from fig_3 folder in the data folder (if you need to generate a new dataset uncomment the dataset line. e.g., *OMPLdata* - it overwrites the previously generated data). You can uncomment the code block in the "verify_dataloader" to check the data.  
+* The nn model is built with e.g., *MLP_soft_OMP* from the "nnet_module.py".  
+* A list of errors for the algorithm, its soft version and the network before training is printed.  
+* The *main_train()* trains the neural network and during the training saves model parameters every few epochs to the checkpoint folder - comment out if the model is already trained and data exists.  
+* The *best_checkpoint_finder()* finds the best checkpoint on the training data from the existing checkpoints and saves the data to the checkpoint folder - comment out if checkpoints are already saved.  
+* The *main_fig_gen()* plots the figures using the model with parameters from the best checkpoint and saves figures to "fig_3" folder in the "figs".
 
 ## Disclaimer
 This code is provided as a complementary resource for readers and without warranty of any kind. The code may not be suitable for all purposes and the user assumes all risks associated with its use.
