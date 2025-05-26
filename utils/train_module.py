@@ -76,11 +76,6 @@ def trainer(model, dataset, config: train_config):
             # forward pass
             outputs_train = model(Y_train)
             loss_train = vec_MSELoss(outputs_train.real, X_train)
-            
-            grads = torch.zeros(64)
-            for i in range(64):
-                loss = (torch.norm(outputs_train[i, :].real - X_train[i, :])**2)
-                grads[i] = torch.norm(torch.autograd.grad(loss, model.parameters(), retain_graph=True)[0])
                 
             # backward pass
             loss_train.backward()
