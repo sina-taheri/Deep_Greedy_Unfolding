@@ -32,7 +32,7 @@ if script_dir not in sys.path:
 sys.path.append(os.path.join(os.path.dirname(script_dir), "utils"))
 sys.path.append(os.path.join(os.path.dirname(script_dir), "models"))
 
-from cs_module_pytorch import OMP, soft_OMP
+from cs_module_pytorch import OMP, Soft_OMP
 
 #%% ### Experimental setup
 torch.set_default_dtype(torch.float64)
@@ -84,7 +84,7 @@ def main_fig2_data(key_val):
                 err_omp[i, j] = torch.norm(x_hat - x)
                 
                 for k, t in enumerate(tau_range):
-                    x_hat = soft_OMP(A, y, tau = t, max_it = IT)
+                    x_hat = Soft_OMP(A, y, tau = t, max_it = IT)
                     err_soft_omp[i, j, k] = torch.norm(x_hat - x)
         
         torch.save({'err_omp':err_omp, 'err_soft_omp': err_soft_omp}, data_save_dir)
@@ -107,7 +107,7 @@ def main_fig2_data(key_val):
             x_omp = OMP(A, y, max_it = it_range[-1], full = True)
                 
             for k, t in enumerate(tau_range):
-                x_soft_omp = soft_OMP(A, y, tau = t, max_it = it_range[-1], full = True)
+                x_soft_omp = Soft_OMP(A, y, tau = t, max_it = it_range[-1], full = True)
                 for j in range(n_it):
                     err_diff[i, j, k] = torch.norm(x_omp[:, it_range[j]] - x_soft_omp[:, it_range[j]])/torch.norm(x_omp[:, it_range[j]])
 
