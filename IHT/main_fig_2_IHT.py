@@ -34,7 +34,7 @@ if script_dir not in sys.path:
 sys.path.append(os.path.join(os.path.dirname(script_dir), "utils"))
 sys.path.append(os.path.join(os.path.dirname(script_dir), "models"))
 
-from algs_module import IHT, soft_IHT
+from cs_module_pytorch import IHT, Soft_IHT
 
 #%% ### Experimental setup
 # torch.set_default_dtype(torch.float64)
