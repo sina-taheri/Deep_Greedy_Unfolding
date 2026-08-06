@@ -1,8 +1,16 @@
-# -*- coding: utf-8 -*-
 """
-Created on Thu Aug  6 16:09:50 2026
-
-@author: sinat
+------- Greedy sparse recovery algorithms module
+description: TBA
+author: Sina Mohammad-Taheri (sina.mohammadtaheri@concordia.ca)
+last revised: 08-06-2026
+comments and future updates:
+    - complex numbers need to be handled more fluidly.
+    - algorithms to be compatible to various sorting proxies than only softsort.
+    - the code is not fully compatible with GPU - To be fixed.
+DISCLAIMER:
+    This code is provided for academic and educational purposes only. While we strive to match the original
+    paper's methodology and results as closely as possible, minor discrepancies may exist due to implementation
+    differences, randomness, or environment settings.
 """
 import torch
 from sort_proxy import soft_sort
