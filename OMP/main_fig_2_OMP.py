@@ -9,7 +9,7 @@ and Figure 1 of the following:
     - OMP-Net: Neural network unrolling of weighted Orthogonal Matching Pursuit
     https://ieeexplore.ieee.org/document/10720377
 author: Sina Mohammad-Taheri (sina.mohammadtaheri@concordia.ca)
-last revised: 5-23-2025
+last revised: 8-6-2026
 comments and future updates:
     1. complex numbers need to be handled more fluidly.
 DISCLAIMER:
@@ -20,8 +20,6 @@ DISCLAIMER:
 if __name__ == '__my_MLP_OMP__': pass
 
 import torch
-import torch.nn as nn
-import numpy as np
 import matplotlib.pyplot as plt
 import math
 import sys
@@ -34,7 +32,7 @@ if script_dir not in sys.path:
 sys.path.append(os.path.join(os.path.dirname(script_dir), "utils"))
 sys.path.append(os.path.join(os.path.dirname(script_dir), "models"))
 
-from algs_module import OMP, soft_OMP
+from cs_module_pytorch import OMP, soft_OMP
 
 #%% ### Experimental setup
 torch.set_default_dtype(torch.float64)
