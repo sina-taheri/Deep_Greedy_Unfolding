@@ -21,7 +21,8 @@ script directory/
 |
 ├── main_fig_1.py            # main code to generate figure 1: Sort vs. Soft-sort
 ├── models/                  # including algorithms and models
-│   ├── algs_module.py       # including functions for algorithms in the package
+│   ├── cs_module_numpy.py       # including functions for algorithms in the package
+|   ├── cs_module_pytorch.py       # including functions for algorithms in the package  
 │   └── nnet_module.py       # including modules to build unrolled neural networks in the package
 │
 ├── utils/
@@ -65,5 +66,8 @@ Set to **0** for "recovery error vs. $\tau$" and to **1** for "difference error 
 * The *best_checkpoint_finder()* finds the best checkpoint on the training data from the existing checkpoints and saves the data to the checkpoint folder - comment out if checkpoints are already saved.  
 * The *main_fig_gen()* plots the figures using the model with parameters from the best checkpoint and saves figures to "fig_3" folder in the "figs".
 
+## Updates
+* 'algs_module' is changed to 'cs_module' which is available in pytorch and numpy.
+  
 ## Disclaimer
 This code is provided as a complementary resource for readers and without warranty of any kind. The code may not be suitable for all purposes and the user assumes all risks associated with its use.
