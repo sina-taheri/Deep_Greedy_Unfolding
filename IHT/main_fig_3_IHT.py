@@ -132,7 +132,7 @@ loss_wiht_oracle = vec_MSELoss(X_wiht_oracle.T, dataset.X[:, n_train:].T)
 
 X_oracle_soft = torch.zeros(N, n_val)
 for i in range(n_val):
-    X_oracle_soft[:, i] = soft_IHT(dataset.A, dataset.Y[:, n_train + i].unsqueeze(1), s, eta = eta_gl, W = w_oracle, tau = tau, max_it = num_it).real.squeeze(1)
+    X_oracle_soft[:, i] = Soft_IHT(dataset.A, dataset.Y[:, n_train + i].unsqueeze(1), s, eta = eta_gl, W = w_oracle, tau = tau, max_it = num_it).real.squeeze(1)
 loss_wsoft_oracle = vec_MSELoss(X_oracle_soft.T, dataset.X[:, n_train:].T)
 
 print("Model loss (before training):", loss_model_before, "\n IHT loss", loss_IHT,\
