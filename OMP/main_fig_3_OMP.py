@@ -46,7 +46,7 @@ sys.path.append(os.path.join(os.path.dirname(script_dir), "utils"))
 sys.path.append(os.path.join(os.path.dirname(script_dir), "models"))
 
 from data_gen import OMPLData
-from algs_module import OMP, soft_OMP
+from cs_module_pytorch import OMP, soft_OMP
 from nnet_module import MLP_soft_OMP
 from train_module import trainer
 from my_config import train_config
