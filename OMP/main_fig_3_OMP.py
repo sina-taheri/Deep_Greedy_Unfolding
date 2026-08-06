@@ -127,7 +127,7 @@ loss_womp_oracle = vec_MSELoss(X_womp_oracle.T, dataset.X[:, n_train:].T)
 
 X_model_soft = torch.zeros(N, n_val)
 for i in range(n_val):
-    X_model_soft[:, i] = soft_OMP(dataset.A, dataset.Y[:, n_train + i].unsqueeze(1), tau = tau, W = w_oracle, max_it = s).real.squeeze(1)
+    X_model_soft[:, i] = Soft_OMP(dataset.A, dataset.Y[:, n_train + i].unsqueeze(1), tau = tau, W = w_oracle, max_it = s).real.squeeze(1)
 loss_wsoft_oracle = vec_MSELoss(X_model_soft.T, dataset.X[:, n_train:].T)
 
 print("Model loss (before training):", loss_model_before, "\n OMP loss", loss_OMP,\
