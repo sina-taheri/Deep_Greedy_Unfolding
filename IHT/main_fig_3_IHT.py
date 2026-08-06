@@ -44,7 +44,7 @@ sys.path.append(os.path.join(os.path.dirname(script_dir), "utils"))
 sys.path.append(os.path.join(os.path.dirname(script_dir), "models"))
 
 from data_gen import IHTLData
-from algs_module import IHT, soft_IHT
+from cs_module_pytorch import IHT, Soft_IHT
 from nnet_module import MLP_soft_IHT
 from train_module import trainer
 from my_config import train_config
