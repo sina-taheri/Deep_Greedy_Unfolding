@@ -87,7 +87,7 @@ def main_fig2_data(key_val):
                 err_iht[i, j] = torch.norm(x_hat - x)
                 
                 for k, t in enumerate(tau_range):
-                    x_hat = soft_IHT(A, y, p = s, eta = eta, tau = t, max_it = IT)
+                    x_hat = Soft_IHT(A, y, p = s, eta = eta, tau = t, max_it = IT)
                     err_soft_iht[i, j, k] = torch.norm(x_hat - x)
         
         torch.save({'err_iht':err_iht, 'err_soft_iht': err_soft_iht}, data_save_dir)
@@ -110,7 +110,7 @@ def main_fig2_data(key_val):
             x_iht = IHT(A, y, p = s, mode = 'Sparsity', eta = eta, max_it = it_range[-1], full = True)
                 
             for k, t in enumerate(tau_range):
-                x_soft_iht = soft_IHT(A, y, p = s, eta = eta, tau = t, max_it = it_range[-1], full = True)
+                x_soft_iht = Soft_IHT(A, y, p = s, eta = eta, tau = t, max_it = it_range[-1], full = True)
                 for j in range(n_it):
                     err_diff[i, j, k] = torch.norm(x_iht[:, it_range[j]] - x_soft_iht[:, it_range[j]])/torch.norm(x_iht[:, it_range[j]])
 
