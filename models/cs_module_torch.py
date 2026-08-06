@@ -31,7 +31,7 @@ def OMP(A, y, max_it = None, W = None, stopping_val = 0, full = False):
     else:
         return x[:, -1].unsqueeze(1)
     
-def soft_OMP(A, y, tau = 1e-5, max_it = None, W = None, stopping_val = 0, full = False):
+def Soft_OMP(A, y, tau = 1e-5, max_it = None, W = None, stopping_val = 0, full = False):
     m, N = A.size()
     x = torch.zeros(N, max_it + 1, dtype = A.dtype)
     if max_it == None:
