@@ -3,8 +3,6 @@
 description: TBA
 author: Sina Mohammad-Taheri (sina.mohammadtaheri@concordia.ca)
 last revised: 08-06-2026
-Updates:
-    - The CompSense module is in numpy.
 comments and future updates:
     - complex numbers need to be handled more fluidly.
     - algorithms to be compatible to various sorting proxies than only softsort.
